@@ -59,6 +59,11 @@
 	potencia = Math.pow(uno[0], uno[2]);  
 	par = parseFloat(uno[1]) * parseFloat(potencia);
 	document.getElementById("prueba").innerHTML = par;
+		for (par = 0; par < 12; par++) {
+  			text += "The number is " + par + "<br>";
+				document.getElementById("pr").innerHTML = par;
+
+		}
 	}
 
 	</SCRIPT>
@@ -103,6 +108,7 @@
         <H3>TASA DE INTERES</H3>
 		<input type="text" id="tai" value="18">%
 	<p id="prueba"></p>
+	<p id="pr"></p>
 
 
    <button type="text" onclick="calc()">ok</button>

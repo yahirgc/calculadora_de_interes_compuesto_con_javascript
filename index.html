@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ARRAYS</title>
+
+<style>	
+	
+	
+		body{   margin:0px 79px;
+      			background-color:#BBFFDD;
+      			COLOR:#000000;
+      			FONT-FAMILY:quicksand;
+      			FONT-SIZE:20PX;
+      			padding:0px;}
+      		
+      		
+      		#di{	background-color: #FFFFCC;
+     			color: #000000;
+     			!border: 1px solid GOLD;
+     			margin: 0px;
+     			padding: 3px;}
+     			
+     			
+      		#div{background-color: #c7f9fc;
+     			color: #000000;
+     			!border: 1px solid #000000;
+     			margin: 0px;
+     			padding: 3px;
+                text-align: justify;}
+     		
+     		
+     		
+     		h1 {	font-size:40;
+     			text-shadow: 1Px 2PX 2PX black;
+			text-align: center;
+			COLOR: GOLD}
+
+
+		#h1v {	font-size:40;
+     			text-shadow: 5px ;
+			text-align: center;
+			COLOR:lightgreen;}
+     			
+     			
+     		
+      		 h3 {font-size:30;
+     			 text-shadow: 1px 1px 2px SOLID BLACK;}
+     			 
+            LEGEND{BORDER: 1px SOLID #000000;}
+      		
+	</style>
+
+
+	<SCRIPT>
+
+	//FV = PV x (1 + i) ^n
+	function calc(){
+	var uno = [1.05, document.getElementById("sain").value, document.getElementById("tai").value];
+	potencia = Math.pow(uno[0], uno[2]);  
+	par = parseFloat(uno[1]) * parseFloat(potencia);
+	document.getElementById("prueba").innerHTML = par;
+	}
+
+	</SCRIPT>
+
+	
+</head>
+
+
+<body>
+
+	<div id="div">
+		<h1 id="h1v">INTERES COMPUESTO</h1>
+ 			<p>Interés de un capital al que se van acumulando sus réditos o intereses para que produzcan otros.</p>
+    			<p>El interés compuesto permite la capitalización de intereses periódicamente -día a día, mes a mes, etc</p>
+
+    	<br>
+
+    	<center>
+
+
+            <h3>Formula</h3>
+            <p>FV = PV x (1 + i) ^n</p>
+    </center>
+            <p>FV significa valor futuro, PV significa valor presente, i significa tasa de interés y n significa número de períodos de capitalización.</p>
+        </div>
+
+    <br>
+
+<div id="div">
+
+<h1 id="h1v">CALCULADORA</h1>
+
+    <CENTER>
+
+        <H3>SALDO INICIAL</H3>                 
+
+		<input type="text" id="sain" value="4">
+
+
+
+
+        <H3>TASA DE INTERES</H3>
+		<input type="text" id="tai" value="18">%
+	<p id="prueba"></p>
+
+
+   <button type="text" onclick="calc()">ok</button>
+
+
+
+</div>
+
+
+<br>
+
+
+</body>
+
+
+</html>
